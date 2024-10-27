@@ -1,2 +1,2 @@
 # X
- This is UI clone of X with Tailwind CSS
+ This is UI clone of the X. It is developed with HTML and Tailwind CSS

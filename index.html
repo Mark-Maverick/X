@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / X</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="src/output.css">
+    <style>
+        @font-face {
+            font-family: 'MarkMaverick', "Roboto", "system-ui";
+            src: url('../fonts/MarkMaverick.woff2') format('woff2');
+        }
+
+        * {
+            font-family: 'MarkMaverick', Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            outline: none;
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #555;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white relative">
+    <div class="fix fixed z-10 sm:hidden bottom-1 w-screen">
+        <div class="bot w-[80vw] flex items-center justify-around mx-auto h-16 rounded-full bg-[#1d9bf0]">
+            <div><span
+                    class="material-symbols-outlined cursor-pointer  hover:bg-[#0003] p-2 rounded-full  text-white md:text-3xl">home</span>
+            </div>
+            <div><span
+                    class="material-symbols-outlined cursor-pointer  hover:bg-[#0003] p-2 rounded-full  text-white md:text-3xl">mail</span>
+            </div>
+            <div><span
+                    class="material-symbols-outlined cursor-pointer  hover:bg-[#0003] p-2 rounded-full  text-white md:text-3xl">search</span>
+            </div>
+            <div><span
+                    class="material-symbols-outlined cursor-pointer  hover:bg-[#0003] p-2 rounded-full  text-white md:text-3xl">notifications</span>
+            </div>
+            <div
+                class="dp w-8 h-8 bg-[url('../images/logo.png')] cursor-pointer hover:bg-[#0003] p-2 rounded-full bg-cover bg-center ">
+            </div>
+        </div>
+    </div>
+    <div class="mainContainer flex items-center justify-center h-screen sm:overflow-y-auto md:w-[80vw] mx-auto">
+        <div class="first hidden sm:block w-fit sticky self-start top-0 min-h-screen">
+            <div
+                class="logo cursor-pointer w-fit h-fit rounded-full hover:bg-[#181818] flex items-center justify-center p-4">
+                <img src="images/logo.svg" alt="site logo" class="invert h-8 w-8 object-cover object-center">
+            </div>
+            <ul class="mb-2">
+                <li
+                    class="flex items-center justify-start gap-1 cursor-pointer pl-3 pr-6 py-3 font-bold hover:bg-[#181818] w-fit rounded-full">
+                    <span class="material-symbols-outlined  md:text-3xl">home</span><span
+                        class="hidden md:block text-[20px]">Home</span>
+                </li>
+                <li
+                    class="flex items-center justify-start gap-1 cursor-pointer pl-3 pr-6 py-3 hover:bg-[#181818] w-fit rounded-full">
+                    <span class="material-symbols-outlined  md:text-3xl">search</span><span
+                        class="hidden md:block text-[20px]">Explore</span>
+                </li>
+                <li
+                    class="flex items-center justify-start gap-1 cursor-pointer pl-3 pr-6 py-3 hover:bg-[#181818] w-fit rounded-full">
+                    <span class="material-symbols-outlined  md:text-3xl">notifications</span><span
+                        class="hidden md:block text-[20px]">Notifications</span>
+                </li>
+                <li
+                    class="flex items-center justify-start gap-1 cursor-pointer pl-3 pr-6 py-3 hover:bg-[#181818] w-fit rounded-full">
+                    <span class="material-symbols-outlined  md:text-3xl">mail</span><span
+                        class="hidden md:block text-[20px]">Messages</span>
+                </li>
+                <li
+                    class="flex items-center justify-start gap-1 cursor-pointer pl-3 pr-6 py-3 hover:bg-[#181818] w-fit rounded-full">
+                    <span class="material-symbols-outlined  md:text-3xl">group</span><span
+                        class="hidden md:block text-[20px]">Communities</span>
+                </li>
+                <li
+                    class="flex items-center justify-start gap-1 cursor-pointer pl-3 pr-6 py-3 hover:bg-[#181818] w-fit rounded-full">
+                    <span><img src="images/logo.svg" class="invert w-7 h-7" alt="site logo"></span><span
+                        class="hidden md:block text-[20px]">Premium</span>
+                </li>
+                <li
+                    class="flex items-center justify-start gap-1 cursor-pointer pl-3 pr-6 py-3 hover:bg-[#181818] w-fit rounded-full">
+                    <span class="material-symbols-outlined  md:text-3xl">bolt</span><span
+                        class="hidden md:block text-[20px]">Business</span>
+                </li>
+                <li
+                    class="flex items-center justify-start gap-1 cursor-pointer pl-3 pr-6 py-3 hover:bg-[#181818] w-fit rounded-full">
+                    <span class="material-symbols-outlined  md:text-3xl">person</span><span
+                        class="hidden md:block text-[20px]">Profile</span>
+                </li>
+                <li
+                    class="flex items-center justify-start gap-1 cursor-pointer pl-3 pr-6 py-3 hover:bg-[#181818] w-fit rounded-full">
+                    <span class="material-symbols-outlined  md:text-3xl">pending</span><span
+                        class="hidden md:block text-[20px]">More</span>
+                </li>
+                <div
+                    class="bg-[#1d9bf0] w-9 h-9 ml-2 my-2 hover:bg-[#1a8cd8] cursor-pointer rounded-full md:hidden flex items-center justify-center">
+                    <img class="invert object-cover object-center w-6 h-6" src="/images/post.svg" alt="post icon">
+                </div>
+            </ul>
+            <button
+                class="bg-[#1d9bf0] px-24 hover:bg-[#1a8cd8] hidden md:block py-3 cursor-pointer rounded-full">Post</button>
+            <div
+                class="userprofile cursor-pointer hover:bg-[#181818] flex items-center justify-around w-full h-fit mt-2 p-3 pl-1 md:p-3 rounded-full gap-2 relative bottom-0">
+                <div class="dp w-8 h-8 bg-[url('../images/logo.png')] rounded-full bg-cover bg-center "></div>
+                <div class="uname hidden md:block">
+                    <p class="font-bold">Mark Maverick</p>
+                    <p class="text-[#676b6f] text-sm">@MarkMaverickOfficial</p>
+                </div>
+                <div class="dots hidden md:block">...</div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="middle md:w-2/3 h-fit w-[90%] self-start border border-[#2f3336]">
+            <div class="forFol flex items-center sticky top-0 justify-center">
+                <div
+                    class="for bg-[#000000a1] cursor-pointer h-16 w-full border-b-2 border-[#2f3336] flex items-center justify-center font-bold relative">
+                    For you <div class="underthetxt h-1 w-14 bg-[#1d9bf0] rounded-full absolute bottom-0"></div>
+                </div>
+                <div
+                    class="fol bg-[#000000a1] cursor-pointer h-16 w-full border-b-2 border-[#2f3336] text-[#6c7075] flex items-center font-bold justify-center">
+                    Following</div>
+            </div>
+            <div class="what flex gap-2 p-5 border-b-2 border-[#2f3336]">
+                <div class="dp w-10 h-10 p-2 bg-[url('../images/logo.png')] rounded-full bg-cover bg-center"></div>
+                <div class="whatsup flex flex-col gap-y-2 w-full">
+                    <input type="text" name="" id="" placeholder="What is happening?!"
+                        class="pt-1 w-full  outline-none bg-black text-white  ">
+                    <div
+                        class="everyone flex items-center justify-center gap-1 w-fit h-fit cursor-pointer py-1 px-2 rounded-full hover:bg-[#031018]">
+                        <span class="material-symbols-outlined text-sm text-[#1d9bf0]">public</span>
+                        <span class="text-[#1d9bf0] text-sm font-bold">Everyone can reply</span>
+                    </div>
+                    <div class="flex items-center justify-between border-t-2 border-[#2f3336] mt-2 pt-5">
+                        <div class="icons ">
+                            <span
+                                class="material-symbols-outlined text-[#1d9bf0] cursor-pointer hover:bg-[#031018] p-2 rounded-full">image</span>
+                            <span
+                                class="material-symbols-outlined text-[#1d9bf0] cursor-pointer hover:bg-[#031018] p-2 rounded-full">gif_box</span>
+                            <span
+                                class="material-symbols-outlined text-[#1d9bf0] cursor-pointer hover:bg-[#031018] p-2 rounded-full">ballot</span>
+                            <span
+                                class="material-symbols-outlined text-[#1d9bf0] cursor-pointer hover:bg-[#031018] p-2 rounded-full">sentiment_satisfied</span>
+                            <span
+                                class="material-symbols-outlined text-[#1d9bf0] cursor-pointer hover:bg-[#031018] p-2 rounded-full">calendar_clock</span>
+                            <span
+                                class="material-symbols-outlined text-[#0f4e78] cursor-default hover:bg-[#031018] p-2 rounded-full">location_on</span>
+                        </div>
+                        <button class="postbtn bg-[#0f4e78] px-4 py-2 rounded-full font-bold">Post</button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="postCount cursor-pointer text-[#1d9bf0] flex items-center justify-center w-full py-3 border-b-2 border-[#2f3336]">
+                Show 999 posts
+            </div>
+
+            <div class="postmain flex gap-2 p-5 border-b-2 border-[#2f3336]">
+                <div class="dp w-10 h-10 p-2 bg-[url('../images/postdp.jpg')] rounded-full bg-cover bg-center"></div>
+                <div class="postmainahead flex flex-col gap-y-1 w-full">
+                    <div class="name flex items-start gap-1">
+                        <span class="hover:underline cursor-pointer">Physics In History</span>
+                        <svg class="w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.5924 3.20027C9.34888 3.4078 9.22711 3.51158 9.09706 3.59874C8.79896 3.79854 8.46417 3.93721 8.1121 4.00672C7.95851 4.03705 7.79903 4.04977 7.48008 4.07522C6.6787 4.13918 6.278 4.17115 5.94371 4.28923C5.17051 4.56233 4.56233 5.17051 4.28923 5.94371C4.17115 6.278 4.13918 6.6787 4.07522 7.48008C4.04977 7.79903 4.03705 7.95851 4.00672 8.1121C3.93721 8.46417 3.79854 8.79896 3.59874 9.09706C3.51158 9.22711 3.40781 9.34887 3.20027 9.5924C2.67883 10.2043 2.4181 10.5102 2.26522 10.8301C1.91159 11.57 1.91159 12.43 2.26522 13.1699C2.41811 13.4898 2.67883 13.7957 3.20027 14.4076C3.40778 14.6511 3.51158 14.7729 3.59874 14.9029C3.79854 15.201 3.93721 15.5358 4.00672 15.8879C4.03705 16.0415 4.04977 16.201 4.07522 16.5199C4.13918 17.3213 4.17115 17.722 4.28923 18.0563C4.56233 18.8295 5.17051 19.4377 5.94371 19.7108C6.278 19.8288 6.6787 19.8608 7.48008 19.9248C7.79903 19.9502 7.95851 19.963 8.1121 19.9933C8.46417 20.0628 8.79896 20.2015 9.09706 20.4013C9.22711 20.4884 9.34887 20.5922 9.5924 20.7997C10.2043 21.3212 10.5102 21.5819 10.8301 21.7348C11.57 22.0884 12.43 22.0884 13.1699 21.7348C13.4898 21.5819 13.7957 21.3212 14.4076 20.7997C14.6511 20.5922 14.7729 20.4884 14.9029 20.4013C15.201 20.2015 15.5358 20.0628 15.8879 19.9933C16.0415 19.963 16.201 19.9502 16.5199 19.9248C17.3213 19.8608 17.722 19.8288 18.0563 19.7108C18.8295 19.4377 19.4377 18.8295 19.7108 18.0563C19.8288 17.722 19.8608 17.3213 19.9248 16.5199C19.9502 16.201 19.963 16.0415 19.9933 15.8879C20.0628 15.5358 20.2015 15.201 20.4013 14.9029C20.4884 14.7729 20.5922 14.6511 20.7997 14.4076C21.3212 13.7957 21.5819 13.4898 21.7348 13.1699C22.0884 12.43 22.0884 11.57 21.7348 10.8301C21.5819 10.5102 21.3212 10.2043 20.7997 9.5924C20.5922 9.34887 20.4884 9.22711 20.4013 9.09706C20.2015 8.79896 20.0628 8.46417 19.9933 8.1121C19.963 7.95851 19.9502 7.79903 19.9248 7.48008C19.8608 6.6787 19.8288 6.278 19.7108 5.94371C19.4377 5.17051 18.8295 4.56233 18.0563 4.28923C17.722 4.17115 17.3213 4.13918 16.5199 4.07522C16.201 4.04977 16.0415 4.03705 15.8879 4.00672C15.5358 3.93721 15.201 3.79854 14.9029 3.59874C14.7729 3.51158 14.6511 3.40781 14.4076 3.20027C13.7957 2.67883 13.4898 2.41811 13.1699 2.26522C12.43 1.91159 11.57 1.91159 10.8301 2.26522C10.5102 2.4181 10.2043 2.67883 9.5924 3.20027ZM16.3735 9.86314C16.6913 9.5453 16.6913 9.03 16.3735 8.71216C16.0557 8.39433 15.5403 8.39433 15.2225 8.71216L10.3723 13.5624L8.77746 11.9676C8.45963 11.6498 7.94432 11.6498 7.62649 11.9676C7.30866 12.2854 7.30866 12.8007 7.62649 13.1186L9.79678 15.2889C10.1146 15.6067 10.6299 15.6067 10.9478 15.2889L16.3735 9.86314Z"
+                                    fill="#1d9bf0"></path>
+                            </g>
+                        </svg>
+                        <span class="cursor-pointer text-[#71767b]">@PhysInHistory • 14h</span>
+                    </div>
+                    <div class="mainpostsContainer">
+                        One of the unsolved problems in Modern physics. ✍️
+                    </div>
+                    <div
+                        class="mainpost flex items-center justify-center gap-1 w-fit h-fit cursor-pointer py-1 px-2 rounded-full hover:bg-[#031018]">
+                        <img class="rounded-xl" src="images/post.jpg" alt="post">
+                    </div>
+                    <div class="emotion flex items-center justify-around text-sm">
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#0a171f] hover:text-[#1d9bf0]">
+                            <span class="material-symbols-outlined">mode_comment</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#071a14] hover:text-[#00ba7c]">
+                            <span class="material-symbols-outlined rotate-90">repeat</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#200914] hover:text-[#f91880]">
+                            <span class="material-symbols-outlined">favorite</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#0a171f] hover:text-[#1d9bf0]">
+                            <span class="material-symbols-outlined">bar_chart_4_bars</span><span>86</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-1 rounded-full cursor-pointer"><span
+                                class="material-symbols-outlined hover:bg-[#0a171f] hover:text-[#1d9bf0] py-2 px-2 rounded-full">bookmark</span><span
+                                class="hover:bg-[#0a171f] hover:text-[#1d9bf0] py-2 px-2 rounded-full"><svg
+                                    viewBox="0 0 24 24" aria-hidden="true"
+                                    class="invert w-5 hover:fill-[#1d9bf0] hover:invert-0">
+                                    <g>
+                                        <path
+                                            d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                        </path>
+                                    </g>
+                                </svg></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="postmain flex gap-2 p-5 border-b-2 border-[#2f3336]">
+                <div class="dp w-10 h-10 p-2 bg-[url('../images/postdp.jpg')] rounded-full bg-cover bg-center"></div>
+                <div class="postmainahead flex flex-col gap-y-1 w-full">
+                    <div class="name flex items-start gap-1">
+                        <span class="hover:underline cursor-pointer">Physics In History</span>
+                        <svg class="w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.5924 3.20027C9.34888 3.4078 9.22711 3.51158 9.09706 3.59874C8.79896 3.79854 8.46417 3.93721 8.1121 4.00672C7.95851 4.03705 7.79903 4.04977 7.48008 4.07522C6.6787 4.13918 6.278 4.17115 5.94371 4.28923C5.17051 4.56233 4.56233 5.17051 4.28923 5.94371C4.17115 6.278 4.13918 6.6787 4.07522 7.48008C4.04977 7.79903 4.03705 7.95851 4.00672 8.1121C3.93721 8.46417 3.79854 8.79896 3.59874 9.09706C3.51158 9.22711 3.40781 9.34887 3.20027 9.5924C2.67883 10.2043 2.4181 10.5102 2.26522 10.8301C1.91159 11.57 1.91159 12.43 2.26522 13.1699C2.41811 13.4898 2.67883 13.7957 3.20027 14.4076C3.40778 14.6511 3.51158 14.7729 3.59874 14.9029C3.79854 15.201 3.93721 15.5358 4.00672 15.8879C4.03705 16.0415 4.04977 16.201 4.07522 16.5199C4.13918 17.3213 4.17115 17.722 4.28923 18.0563C4.56233 18.8295 5.17051 19.4377 5.94371 19.7108C6.278 19.8288 6.6787 19.8608 7.48008 19.9248C7.79903 19.9502 7.95851 19.963 8.1121 19.9933C8.46417 20.0628 8.79896 20.2015 9.09706 20.4013C9.22711 20.4884 9.34887 20.5922 9.5924 20.7997C10.2043 21.3212 10.5102 21.5819 10.8301 21.7348C11.57 22.0884 12.43 22.0884 13.1699 21.7348C13.4898 21.5819 13.7957 21.3212 14.4076 20.7997C14.6511 20.5922 14.7729 20.4884 14.9029 20.4013C15.201 20.2015 15.5358 20.0628 15.8879 19.9933C16.0415 19.963 16.201 19.9502 16.5199 19.9248C17.3213 19.8608 17.722 19.8288 18.0563 19.7108C18.8295 19.4377 19.4377 18.8295 19.7108 18.0563C19.8288 17.722 19.8608 17.3213 19.9248 16.5199C19.9502 16.201 19.963 16.0415 19.9933 15.8879C20.0628 15.5358 20.2015 15.201 20.4013 14.9029C20.4884 14.7729 20.5922 14.6511 20.7997 14.4076C21.3212 13.7957 21.5819 13.4898 21.7348 13.1699C22.0884 12.43 22.0884 11.57 21.7348 10.8301C21.5819 10.5102 21.3212 10.2043 20.7997 9.5924C20.5922 9.34887 20.4884 9.22711 20.4013 9.09706C20.2015 8.79896 20.0628 8.46417 19.9933 8.1121C19.963 7.95851 19.9502 7.79903 19.9248 7.48008C19.8608 6.6787 19.8288 6.278 19.7108 5.94371C19.4377 5.17051 18.8295 4.56233 18.0563 4.28923C17.722 4.17115 17.3213 4.13918 16.5199 4.07522C16.201 4.04977 16.0415 4.03705 15.8879 4.00672C15.5358 3.93721 15.201 3.79854 14.9029 3.59874C14.7729 3.51158 14.6511 3.40781 14.4076 3.20027C13.7957 2.67883 13.4898 2.41811 13.1699 2.26522C12.43 1.91159 11.57 1.91159 10.8301 2.26522C10.5102 2.4181 10.2043 2.67883 9.5924 3.20027ZM16.3735 9.86314C16.6913 9.5453 16.6913 9.03 16.3735 8.71216C16.0557 8.39433 15.5403 8.39433 15.2225 8.71216L10.3723 13.5624L8.77746 11.9676C8.45963 11.6498 7.94432 11.6498 7.62649 11.9676C7.30866 12.2854 7.30866 12.8007 7.62649 13.1186L9.79678 15.2889C10.1146 15.6067 10.6299 15.6067 10.9478 15.2889L16.3735 9.86314Z"
+                                    fill="#1d9bf0"></path>
+                            </g>
+                        </svg>
+                        <span class="cursor-pointer text-[#71767b]">@PhysInHistory • 14h</span>
+                    </div>
+                    <div class="mainpostsContainer">
+                        One of the unsolved problems in Modern physics. ✍️
+                    </div>
+                    <div
+                        class="mainpost flex items-center justify-center gap-1 w-fit h-fit cursor-pointer py-1 px-2 rounded-full hover:bg-[#031018]">
+                        <img class="rounded-xl" src="images/post.jpg" alt="post">
+                    </div>
+                    <div class="emotion flex items-center justify-around text-sm">
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#0a171f] hover:text-[#1d9bf0]">
+                            <span class="material-symbols-outlined">mode_comment</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#071a14] hover:text-[#00ba7c]">
+                            <span class="material-symbols-outlined rotate-90">repeat</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#200914] hover:text-[#f91880]">
+                            <span class="material-symbols-outlined">favorite</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#0a171f] hover:text-[#1d9bf0]">
+                            <span class="material-symbols-outlined">bar_chart_4_bars</span><span>86</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-1 rounded-full cursor-pointer"><span
+                                class="material-symbols-outlined hover:bg-[#0a171f] hover:text-[#1d9bf0] py-2 px-2 rounded-full">bookmark</span><span
+                                class="hover:bg-[#0a171f] hover:text-[#1d9bf0] py-2 px-2 rounded-full"><svg
+                                    viewBox="0 0 24 24" aria-hidden="true"
+                                    class="invert w-5 hover:fill-[#1d9bf0] hover:invert-0">
+                                    <g>
+                                        <path
+                                            d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                        </path>
+                                    </g>
+                                </svg></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="postmain flex gap-2 p-5 border-b-2 border-[#2f3336]">
+                <div class="dp w-10 h-10 p-2 bg-[url('../images/postdp.jpg')] rounded-full bg-cover bg-center"></div>
+                <div class="postmainahead flex flex-col gap-y-1 w-full">
+                    <div class="name flex items-start gap-1">
+                        <span class="hover:underline cursor-pointer">Physics In History</span>
+                        <svg class="w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.5924 3.20027C9.34888 3.4078 9.22711 3.51158 9.09706 3.59874C8.79896 3.79854 8.46417 3.93721 8.1121 4.00672C7.95851 4.03705 7.79903 4.04977 7.48008 4.07522C6.6787 4.13918 6.278 4.17115 5.94371 4.28923C5.17051 4.56233 4.56233 5.17051 4.28923 5.94371C4.17115 6.278 4.13918 6.6787 4.07522 7.48008C4.04977 7.79903 4.03705 7.95851 4.00672 8.1121C3.93721 8.46417 3.79854 8.79896 3.59874 9.09706C3.51158 9.22711 3.40781 9.34887 3.20027 9.5924C2.67883 10.2043 2.4181 10.5102 2.26522 10.8301C1.91159 11.57 1.91159 12.43 2.26522 13.1699C2.41811 13.4898 2.67883 13.7957 3.20027 14.4076C3.40778 14.6511 3.51158 14.7729 3.59874 14.9029C3.79854 15.201 3.93721 15.5358 4.00672 15.8879C4.03705 16.0415 4.04977 16.201 4.07522 16.5199C4.13918 17.3213 4.17115 17.722 4.28923 18.0563C4.56233 18.8295 5.17051 19.4377 5.94371 19.7108C6.278 19.8288 6.6787 19.8608 7.48008 19.9248C7.79903 19.9502 7.95851 19.963 8.1121 19.9933C8.46417 20.0628 8.79896 20.2015 9.09706 20.4013C9.22711 20.4884 9.34887 20.5922 9.5924 20.7997C10.2043 21.3212 10.5102 21.5819 10.8301 21.7348C11.57 22.0884 12.43 22.0884 13.1699 21.7348C13.4898 21.5819 13.7957 21.3212 14.4076 20.7997C14.6511 20.5922 14.7729 20.4884 14.9029 20.4013C15.201 20.2015 15.5358 20.0628 15.8879 19.9933C16.0415 19.963 16.201 19.9502 16.5199 19.9248C17.3213 19.8608 17.722 19.8288 18.0563 19.7108C18.8295 19.4377 19.4377 18.8295 19.7108 18.0563C19.8288 17.722 19.8608 17.3213 19.9248 16.5199C19.9502 16.201 19.963 16.0415 19.9933 15.8879C20.0628 15.5358 20.2015 15.201 20.4013 14.9029C20.4884 14.7729 20.5922 14.6511 20.7997 14.4076C21.3212 13.7957 21.5819 13.4898 21.7348 13.1699C22.0884 12.43 22.0884 11.57 21.7348 10.8301C21.5819 10.5102 21.3212 10.2043 20.7997 9.5924C20.5922 9.34887 20.4884 9.22711 20.4013 9.09706C20.2015 8.79896 20.0628 8.46417 19.9933 8.1121C19.963 7.95851 19.9502 7.79903 19.9248 7.48008C19.8608 6.6787 19.8288 6.278 19.7108 5.94371C19.4377 5.17051 18.8295 4.56233 18.0563 4.28923C17.722 4.17115 17.3213 4.13918 16.5199 4.07522C16.201 4.04977 16.0415 4.03705 15.8879 4.00672C15.5358 3.93721 15.201 3.79854 14.9029 3.59874C14.7729 3.51158 14.6511 3.40781 14.4076 3.20027C13.7957 2.67883 13.4898 2.41811 13.1699 2.26522C12.43 1.91159 11.57 1.91159 10.8301 2.26522C10.5102 2.4181 10.2043 2.67883 9.5924 3.20027ZM16.3735 9.86314C16.6913 9.5453 16.6913 9.03 16.3735 8.71216C16.0557 8.39433 15.5403 8.39433 15.2225 8.71216L10.3723 13.5624L8.77746 11.9676C8.45963 11.6498 7.94432 11.6498 7.62649 11.9676C7.30866 12.2854 7.30866 12.8007 7.62649 13.1186L9.79678 15.2889C10.1146 15.6067 10.6299 15.6067 10.9478 15.2889L16.3735 9.86314Z"
+                                    fill="#1d9bf0"></path>
+                            </g>
+                        </svg>
+                        <span class="cursor-pointer text-[#71767b]">@PhysInHistory • 14h</span>
+                    </div>
+                    <div class="mainpostsContainer">
+                        One of the unsolved problems in Modern physics. ✍️
+                    </div>
+                    <div
+                        class="mainpost flex items-center justify-center gap-1 w-fit h-fit cursor-pointer py-1 px-2 rounded-full hover:bg-[#031018]">
+                        <img class="rounded-xl" src="images/post.jpg" alt="post">
+                    </div>
+                    <div class="emotion flex items-center justify-around text-sm">
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#0a171f] hover:text-[#1d9bf0]">
+                            <span class="material-symbols-outlined">mode_comment</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#071a14] hover:text-[#00ba7c]">
+                            <span class="material-symbols-outlined rotate-90">repeat</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#200914] hover:text-[#f91880]">
+                            <span class="material-symbols-outlined">favorite</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#0a171f] hover:text-[#1d9bf0]">
+                            <span class="material-symbols-outlined">bar_chart_4_bars</span><span>86</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-1 rounded-full cursor-pointer"><span
+                                class="material-symbols-outlined hover:bg-[#0a171f] hover:text-[#1d9bf0] py-2 px-2 rounded-full">bookmark</span><span
+                                class="hover:bg-[#0a171f] hover:text-[#1d9bf0] py-2 px-2 rounded-full"><svg
+                                    viewBox="0 0 24 24" aria-hidden="true"
+                                    class="invert w-5 hover:fill-[#1d9bf0] hover:invert-0">
+                                    <g>
+                                        <path
+                                            d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                        </path>
+                                    </g>
+                                </svg></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="postmain flex gap-2 p-5 border-b-2 border-[#2f3336]">
+                <div class="dp w-10 h-10 p-2 bg-[url('../images/postdp.jpg')] rounded-full bg-cover bg-center"></div>
+                <div class="postmainahead flex flex-col gap-y-1 w-full">
+                    <div class="name flex items-start gap-1">
+                        <span class="hover:underline cursor-pointer">Physics In History</span>
+                        <svg class="w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.5924 3.20027C9.34888 3.4078 9.22711 3.51158 9.09706 3.59874C8.79896 3.79854 8.46417 3.93721 8.1121 4.00672C7.95851 4.03705 7.79903 4.04977 7.48008 4.07522C6.6787 4.13918 6.278 4.17115 5.94371 4.28923C5.17051 4.56233 4.56233 5.17051 4.28923 5.94371C4.17115 6.278 4.13918 6.6787 4.07522 7.48008C4.04977 7.79903 4.03705 7.95851 4.00672 8.1121C3.93721 8.46417 3.79854 8.79896 3.59874 9.09706C3.51158 9.22711 3.40781 9.34887 3.20027 9.5924C2.67883 10.2043 2.4181 10.5102 2.26522 10.8301C1.91159 11.57 1.91159 12.43 2.26522 13.1699C2.41811 13.4898 2.67883 13.7957 3.20027 14.4076C3.40778 14.6511 3.51158 14.7729 3.59874 14.9029C3.79854 15.201 3.93721 15.5358 4.00672 15.8879C4.03705 16.0415 4.04977 16.201 4.07522 16.5199C4.13918 17.3213 4.17115 17.722 4.28923 18.0563C4.56233 18.8295 5.17051 19.4377 5.94371 19.7108C6.278 19.8288 6.6787 19.8608 7.48008 19.9248C7.79903 19.9502 7.95851 19.963 8.1121 19.9933C8.46417 20.0628 8.79896 20.2015 9.09706 20.4013C9.22711 20.4884 9.34887 20.5922 9.5924 20.7997C10.2043 21.3212 10.5102 21.5819 10.8301 21.7348C11.57 22.0884 12.43 22.0884 13.1699 21.7348C13.4898 21.5819 13.7957 21.3212 14.4076 20.7997C14.6511 20.5922 14.7729 20.4884 14.9029 20.4013C15.201 20.2015 15.5358 20.0628 15.8879 19.9933C16.0415 19.963 16.201 19.9502 16.5199 19.9248C17.3213 19.8608 17.722 19.8288 18.0563 19.7108C18.8295 19.4377 19.4377 18.8295 19.7108 18.0563C19.8288 17.722 19.8608 17.3213 19.9248 16.5199C19.9502 16.201 19.963 16.0415 19.9933 15.8879C20.0628 15.5358 20.2015 15.201 20.4013 14.9029C20.4884 14.7729 20.5922 14.6511 20.7997 14.4076C21.3212 13.7957 21.5819 13.4898 21.7348 13.1699C22.0884 12.43 22.0884 11.57 21.7348 10.8301C21.5819 10.5102 21.3212 10.2043 20.7997 9.5924C20.5922 9.34887 20.4884 9.22711 20.4013 9.09706C20.2015 8.79896 20.0628 8.46417 19.9933 8.1121C19.963 7.95851 19.9502 7.79903 19.9248 7.48008C19.8608 6.6787 19.8288 6.278 19.7108 5.94371C19.4377 5.17051 18.8295 4.56233 18.0563 4.28923C17.722 4.17115 17.3213 4.13918 16.5199 4.07522C16.201 4.04977 16.0415 4.03705 15.8879 4.00672C15.5358 3.93721 15.201 3.79854 14.9029 3.59874C14.7729 3.51158 14.6511 3.40781 14.4076 3.20027C13.7957 2.67883 13.4898 2.41811 13.1699 2.26522C12.43 1.91159 11.57 1.91159 10.8301 2.26522C10.5102 2.4181 10.2043 2.67883 9.5924 3.20027ZM16.3735 9.86314C16.6913 9.5453 16.6913 9.03 16.3735 8.71216C16.0557 8.39433 15.5403 8.39433 15.2225 8.71216L10.3723 13.5624L8.77746 11.9676C8.45963 11.6498 7.94432 11.6498 7.62649 11.9676C7.30866 12.2854 7.30866 12.8007 7.62649 13.1186L9.79678 15.2889C10.1146 15.6067 10.6299 15.6067 10.9478 15.2889L16.3735 9.86314Z"
+                                    fill="#1d9bf0"></path>
+                            </g>
+                        </svg>
+                        <span class="cursor-pointer text-[#71767b]">@PhysInHistory • 14h</span>
+                    </div>
+                    <div class="mainpostsContainer">
+                        One of the unsolved problems in Modern physics. ✍️
+                    </div>
+                    <div
+                        class="mainpost flex items-center justify-center gap-1 w-fit h-fit cursor-pointer py-1 px-2 rounded-full hover:bg-[#031018]">
+                        <img class="rounded-xl" src="images/post.jpg" alt="post">
+                    </div>
+                    <div class="emotion flex items-center justify-around text-sm">
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#0a171f] hover:text-[#1d9bf0]">
+                            <span class="material-symbols-outlined">mode_comment</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#071a14] hover:text-[#00ba7c]">
+                            <span class="material-symbols-outlined rotate-90">repeat</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#200914] hover:text-[#f91880]">
+                            <span class="material-symbols-outlined">favorite</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#0a171f] hover:text-[#1d9bf0]">
+                            <span class="material-symbols-outlined">bar_chart_4_bars</span><span>86</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-1 rounded-full cursor-pointer"><span
+                                class="material-symbols-outlined hover:bg-[#0a171f] hover:text-[#1d9bf0] py-2 px-2 rounded-full">bookmark</span><span
+                                class="hover:bg-[#0a171f] hover:text-[#1d9bf0] py-2 px-2 rounded-full"><svg
+                                    viewBox="0 0 24 24" aria-hidden="true"
+                                    class="invert w-5 hover:fill-[#1d9bf0] hover:invert-0">
+                                    <g>
+                                        <path
+                                            d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                        </path>
+                                    </g>
+                                </svg></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="postmain flex gap-2 p-5 border-b-2 border-[#2f3336]">
+                <div class="dp w-10 h-10 p-2 bg-[url('../images/postdp.jpg')] rounded-full bg-cover bg-center"></div>
+                <div class="postmainahead flex flex-col gap-y-1 w-full">
+                    <div class="name flex items-start gap-1">
+                        <span class="hover:underline cursor-pointer">Physics In History</span>
+                        <svg class="w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.5924 3.20027C9.34888 3.4078 9.22711 3.51158 9.09706 3.59874C8.79896 3.79854 8.46417 3.93721 8.1121 4.00672C7.95851 4.03705 7.79903 4.04977 7.48008 4.07522C6.6787 4.13918 6.278 4.17115 5.94371 4.28923C5.17051 4.56233 4.56233 5.17051 4.28923 5.94371C4.17115 6.278 4.13918 6.6787 4.07522 7.48008C4.04977 7.79903 4.03705 7.95851 4.00672 8.1121C3.93721 8.46417 3.79854 8.79896 3.59874 9.09706C3.51158 9.22711 3.40781 9.34887 3.20027 9.5924C2.67883 10.2043 2.4181 10.5102 2.26522 10.8301C1.91159 11.57 1.91159 12.43 2.26522 13.1699C2.41811 13.4898 2.67883 13.7957 3.20027 14.4076C3.40778 14.6511 3.51158 14.7729 3.59874 14.9029C3.79854 15.201 3.93721 15.5358 4.00672 15.8879C4.03705 16.0415 4.04977 16.201 4.07522 16.5199C4.13918 17.3213 4.17115 17.722 4.28923 18.0563C4.56233 18.8295 5.17051 19.4377 5.94371 19.7108C6.278 19.8288 6.6787 19.8608 7.48008 19.9248C7.79903 19.9502 7.95851 19.963 8.1121 19.9933C8.46417 20.0628 8.79896 20.2015 9.09706 20.4013C9.22711 20.4884 9.34887 20.5922 9.5924 20.7997C10.2043 21.3212 10.5102 21.5819 10.8301 21.7348C11.57 22.0884 12.43 22.0884 13.1699 21.7348C13.4898 21.5819 13.7957 21.3212 14.4076 20.7997C14.6511 20.5922 14.7729 20.4884 14.9029 20.4013C15.201 20.2015 15.5358 20.0628 15.8879 19.9933C16.0415 19.963 16.201 19.9502 16.5199 19.9248C17.3213 19.8608 17.722 19.8288 18.0563 19.7108C18.8295 19.4377 19.4377 18.8295 19.7108 18.0563C19.8288 17.722 19.8608 17.3213 19.9248 16.5199C19.9502 16.201 19.963 16.0415 19.9933 15.8879C20.0628 15.5358 20.2015 15.201 20.4013 14.9029C20.4884 14.7729 20.5922 14.6511 20.7997 14.4076C21.3212 13.7957 21.5819 13.4898 21.7348 13.1699C22.0884 12.43 22.0884 11.57 21.7348 10.8301C21.5819 10.5102 21.3212 10.2043 20.7997 9.5924C20.5922 9.34887 20.4884 9.22711 20.4013 9.09706C20.2015 8.79896 20.0628 8.46417 19.9933 8.1121C19.963 7.95851 19.9502 7.79903 19.9248 7.48008C19.8608 6.6787 19.8288 6.278 19.7108 5.94371C19.4377 5.17051 18.8295 4.56233 18.0563 4.28923C17.722 4.17115 17.3213 4.13918 16.5199 4.07522C16.201 4.04977 16.0415 4.03705 15.8879 4.00672C15.5358 3.93721 15.201 3.79854 14.9029 3.59874C14.7729 3.51158 14.6511 3.40781 14.4076 3.20027C13.7957 2.67883 13.4898 2.41811 13.1699 2.26522C12.43 1.91159 11.57 1.91159 10.8301 2.26522C10.5102 2.4181 10.2043 2.67883 9.5924 3.20027ZM16.3735 9.86314C16.6913 9.5453 16.6913 9.03 16.3735 8.71216C16.0557 8.39433 15.5403 8.39433 15.2225 8.71216L10.3723 13.5624L8.77746 11.9676C8.45963 11.6498 7.94432 11.6498 7.62649 11.9676C7.30866 12.2854 7.30866 12.8007 7.62649 13.1186L9.79678 15.2889C10.1146 15.6067 10.6299 15.6067 10.9478 15.2889L16.3735 9.86314Z"
+                                    fill="#1d9bf0"></path>
+                            </g>
+                        </svg>
+                        <span class="cursor-pointer text-[#71767b]">@PhysInHistory • 14h</span>
+                    </div>
+                    <div class="mainpostsContainer">
+                        One of the unsolved problems in Modern physics. ✍️
+                    </div>
+                    <div
+                        class="mainpost flex items-center justify-center gap-1 w-fit h-fit cursor-pointer py-1 px-2 rounded-full hover:bg-[#031018]">
+                        <img class="rounded-xl" src="images/post.jpg" alt="post">
+                    </div>
+                    <div class="emotion flex items-center justify-around text-sm">
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#0a171f] hover:text-[#1d9bf0]">
+                            <span class="material-symbols-outlined">mode_comment</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#071a14] hover:text-[#00ba7c]">
+                            <span class="material-symbols-outlined rotate-90">repeat</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#200914] hover:text-[#f91880]">
+                            <span class="material-symbols-outlined">favorite</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#0a171f] hover:text-[#1d9bf0]">
+                            <span class="material-symbols-outlined">bar_chart_4_bars</span><span>86</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-1 rounded-full cursor-pointer"><span
+                                class="material-symbols-outlined hover:bg-[#0a171f] hover:text-[#1d9bf0] py-2 px-2 rounded-full">bookmark</span><span
+                                class="hover:bg-[#0a171f] hover:text-[#1d9bf0] py-2 px-2 rounded-full"><svg
+                                    viewBox="0 0 24 24" aria-hidden="true"
+                                    class="invert w-5 hover:fill-[#1d9bf0] hover:invert-0">
+                                    <g>
+                                        <path
+                                            d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                        </path>
+                                    </g>
+                                </svg></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="postmain flex gap-2 p-5 border-b-2 border-[#2f3336]">
+                <div class="dp w-10 h-10 p-2 bg-[url('../images/postdp.jpg')] rounded-full bg-cover bg-center"></div>
+                <div class="postmainahead flex flex-col gap-y-1 w-full">
+                    <div class="name flex items-start gap-1">
+                        <span class="hover:underline cursor-pointer">Physics In History</span>
+                        <svg class="w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.5924 3.20027C9.34888 3.4078 9.22711 3.51158 9.09706 3.59874C8.79896 3.79854 8.46417 3.93721 8.1121 4.00672C7.95851 4.03705 7.79903 4.04977 7.48008 4.07522C6.6787 4.13918 6.278 4.17115 5.94371 4.28923C5.17051 4.56233 4.56233 5.17051 4.28923 5.94371C4.17115 6.278 4.13918 6.6787 4.07522 7.48008C4.04977 7.79903 4.03705 7.95851 4.00672 8.1121C3.93721 8.46417 3.79854 8.79896 3.59874 9.09706C3.51158 9.22711 3.40781 9.34887 3.20027 9.5924C2.67883 10.2043 2.4181 10.5102 2.26522 10.8301C1.91159 11.57 1.91159 12.43 2.26522 13.1699C2.41811 13.4898 2.67883 13.7957 3.20027 14.4076C3.40778 14.6511 3.51158 14.7729 3.59874 14.9029C3.79854 15.201 3.93721 15.5358 4.00672 15.8879C4.03705 16.0415 4.04977 16.201 4.07522 16.5199C4.13918 17.3213 4.17115 17.722 4.28923 18.0563C4.56233 18.8295 5.17051 19.4377 5.94371 19.7108C6.278 19.8288 6.6787 19.8608 7.48008 19.9248C7.79903 19.9502 7.95851 19.963 8.1121 19.9933C8.46417 20.0628 8.79896 20.2015 9.09706 20.4013C9.22711 20.4884 9.34887 20.5922 9.5924 20.7997C10.2043 21.3212 10.5102 21.5819 10.8301 21.7348C11.57 22.0884 12.43 22.0884 13.1699 21.7348C13.4898 21.5819 13.7957 21.3212 14.4076 20.7997C14.6511 20.5922 14.7729 20.4884 14.9029 20.4013C15.201 20.2015 15.5358 20.0628 15.8879 19.9933C16.0415 19.963 16.201 19.9502 16.5199 19.9248C17.3213 19.8608 17.722 19.8288 18.0563 19.7108C18.8295 19.4377 19.4377 18.8295 19.7108 18.0563C19.8288 17.722 19.8608 17.3213 19.9248 16.5199C19.9502 16.201 19.963 16.0415 19.9933 15.8879C20.0628 15.5358 20.2015 15.201 20.4013 14.9029C20.4884 14.7729 20.5922 14.6511 20.7997 14.4076C21.3212 13.7957 21.5819 13.4898 21.7348 13.1699C22.0884 12.43 22.0884 11.57 21.7348 10.8301C21.5819 10.5102 21.3212 10.2043 20.7997 9.5924C20.5922 9.34887 20.4884 9.22711 20.4013 9.09706C20.2015 8.79896 20.0628 8.46417 19.9933 8.1121C19.963 7.95851 19.9502 7.79903 19.9248 7.48008C19.8608 6.6787 19.8288 6.278 19.7108 5.94371C19.4377 5.17051 18.8295 4.56233 18.0563 4.28923C17.722 4.17115 17.3213 4.13918 16.5199 4.07522C16.201 4.04977 16.0415 4.03705 15.8879 4.00672C15.5358 3.93721 15.201 3.79854 14.9029 3.59874C14.7729 3.51158 14.6511 3.40781 14.4076 3.20027C13.7957 2.67883 13.4898 2.41811 13.1699 2.26522C12.43 1.91159 11.57 1.91159 10.8301 2.26522C10.5102 2.4181 10.2043 2.67883 9.5924 3.20027ZM16.3735 9.86314C16.6913 9.5453 16.6913 9.03 16.3735 8.71216C16.0557 8.39433 15.5403 8.39433 15.2225 8.71216L10.3723 13.5624L8.77746 11.9676C8.45963 11.6498 7.94432 11.6498 7.62649 11.9676C7.30866 12.2854 7.30866 12.8007 7.62649 13.1186L9.79678 15.2889C10.1146 15.6067 10.6299 15.6067 10.9478 15.2889L16.3735 9.86314Z"
+                                    fill="#1d9bf0"></path>
+                            </g>
+                        </svg>
+                        <span class="cursor-pointer text-[#71767b]">@PhysInHistory • 14h</span>
+                    </div>
+                    <div class="mainpostsContainer">
+                        One of the unsolved problems in Modern physics. ✍️
+                    </div>
+                    <div
+                        class="mainpost flex items-center justify-center gap-1 w-fit h-fit cursor-pointer py-1 px-2 rounded-full hover:bg-[#031018]">
+                        <img class="rounded-xl" src="images/post.jpg" alt="post">
+                    </div>
+                    <div class="emotion flex items-center justify-around text-sm">
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#0a171f] hover:text-[#1d9bf0]">
+                            <span class="material-symbols-outlined">mode_comment</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#071a14] hover:text-[#00ba7c]">
+                            <span class="material-symbols-outlined rotate-90">repeat</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#200914] hover:text-[#f91880]">
+                            <span class="material-symbols-outlined">favorite</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#0a171f] hover:text-[#1d9bf0]">
+                            <span class="material-symbols-outlined">bar_chart_4_bars</span><span>86</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-1 rounded-full cursor-pointer"><span
+                                class="material-symbols-outlined hover:bg-[#0a171f] hover:text-[#1d9bf0] py-2 px-2 rounded-full">bookmark</span><span
+                                class="hover:bg-[#0a171f] hover:text-[#1d9bf0] py-2 px-2 rounded-full"><svg
+                                    viewBox="0 0 24 24" aria-hidden="true"
+                                    class="invert w-5 hover:fill-[#1d9bf0] hover:invert-0">
+                                    <g>
+                                        <path
+                                            d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                        </path>
+                                    </g>
+                                </svg></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="postmain flex gap-2 p-5 border-b-2 border-[#2f3336]">
+                <div class="dp w-10 h-10 p-2 bg-[url('../images/postdp.jpg')] rounded-full bg-cover bg-center"></div>
+                <div class="postmainahead flex flex-col gap-y-1 w-full">
+                    <div class="name flex items-start gap-1">
+                        <span class="hover:underline cursor-pointer">Physics In History</span>
+                        <svg class="w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.5924 3.20027C9.34888 3.4078 9.22711 3.51158 9.09706 3.59874C8.79896 3.79854 8.46417 3.93721 8.1121 4.00672C7.95851 4.03705 7.79903 4.04977 7.48008 4.07522C6.6787 4.13918 6.278 4.17115 5.94371 4.28923C5.17051 4.56233 4.56233 5.17051 4.28923 5.94371C4.17115 6.278 4.13918 6.6787 4.07522 7.48008C4.04977 7.79903 4.03705 7.95851 4.00672 8.1121C3.93721 8.46417 3.79854 8.79896 3.59874 9.09706C3.51158 9.22711 3.40781 9.34887 3.20027 9.5924C2.67883 10.2043 2.4181 10.5102 2.26522 10.8301C1.91159 11.57 1.91159 12.43 2.26522 13.1699C2.41811 13.4898 2.67883 13.7957 3.20027 14.4076C3.40778 14.6511 3.51158 14.7729 3.59874 14.9029C3.79854 15.201 3.93721 15.5358 4.00672 15.8879C4.03705 16.0415 4.04977 16.201 4.07522 16.5199C4.13918 17.3213 4.17115 17.722 4.28923 18.0563C4.56233 18.8295 5.17051 19.4377 5.94371 19.7108C6.278 19.8288 6.6787 19.8608 7.48008 19.9248C7.79903 19.9502 7.95851 19.963 8.1121 19.9933C8.46417 20.0628 8.79896 20.2015 9.09706 20.4013C9.22711 20.4884 9.34887 20.5922 9.5924 20.7997C10.2043 21.3212 10.5102 21.5819 10.8301 21.7348C11.57 22.0884 12.43 22.0884 13.1699 21.7348C13.4898 21.5819 13.7957 21.3212 14.4076 20.7997C14.6511 20.5922 14.7729 20.4884 14.9029 20.4013C15.201 20.2015 15.5358 20.0628 15.8879 19.9933C16.0415 19.963 16.201 19.9502 16.5199 19.9248C17.3213 19.8608 17.722 19.8288 18.0563 19.7108C18.8295 19.4377 19.4377 18.8295 19.7108 18.0563C19.8288 17.722 19.8608 17.3213 19.9248 16.5199C19.9502 16.201 19.963 16.0415 19.9933 15.8879C20.0628 15.5358 20.2015 15.201 20.4013 14.9029C20.4884 14.7729 20.5922 14.6511 20.7997 14.4076C21.3212 13.7957 21.5819 13.4898 21.7348 13.1699C22.0884 12.43 22.0884 11.57 21.7348 10.8301C21.5819 10.5102 21.3212 10.2043 20.7997 9.5924C20.5922 9.34887 20.4884 9.22711 20.4013 9.09706C20.2015 8.79896 20.0628 8.46417 19.9933 8.1121C19.963 7.95851 19.9502 7.79903 19.9248 7.48008C19.8608 6.6787 19.8288 6.278 19.7108 5.94371C19.4377 5.17051 18.8295 4.56233 18.0563 4.28923C17.722 4.17115 17.3213 4.13918 16.5199 4.07522C16.201 4.04977 16.0415 4.03705 15.8879 4.00672C15.5358 3.93721 15.201 3.79854 14.9029 3.59874C14.7729 3.51158 14.6511 3.40781 14.4076 3.20027C13.7957 2.67883 13.4898 2.41811 13.1699 2.26522C12.43 1.91159 11.57 1.91159 10.8301 2.26522C10.5102 2.4181 10.2043 2.67883 9.5924 3.20027ZM16.3735 9.86314C16.6913 9.5453 16.6913 9.03 16.3735 8.71216C16.0557 8.39433 15.5403 8.39433 15.2225 8.71216L10.3723 13.5624L8.77746 11.9676C8.45963 11.6498 7.94432 11.6498 7.62649 11.9676C7.30866 12.2854 7.30866 12.8007 7.62649 13.1186L9.79678 15.2889C10.1146 15.6067 10.6299 15.6067 10.9478 15.2889L16.3735 9.86314Z"
+                                    fill="#1d9bf0"></path>
+                            </g>
+                        </svg>
+                        <span class="cursor-pointer text-[#71767b]">@PhysInHistory • 14h</span>
+                    </div>
+                    <div class="mainpostsContainer">
+                        One of the unsolved problems in Modern physics. ✍️
+                    </div>
+                    <div
+                        class="mainpost flex items-center justify-center gap-1 w-fit h-fit cursor-pointer py-1 px-2 rounded-full hover:bg-[#031018]">
+                        <img class="rounded-xl" src="images/post.jpg" alt="post">
+                    </div>
+                    <div class="emotion flex items-center justify-around text-sm">
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#0a171f] hover:text-[#1d9bf0]">
+                            <span class="material-symbols-outlined">mode_comment</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#071a14] hover:text-[#00ba7c]">
+                            <span class="material-symbols-outlined rotate-90">repeat</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#200914] hover:text-[#f91880]">
+                            <span class="material-symbols-outlined">favorite</span><span>86</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-1 py-1 px-2 rounded-full cursor-pointer hover:bg-[#0a171f] hover:text-[#1d9bf0]">
+                            <span class="material-symbols-outlined">bar_chart_4_bars</span><span>86</span>
+                        </div>
+                        <div class="flex items-center justify-center gap-1 rounded-full cursor-pointer"><span
+                                class="material-symbols-outlined hover:bg-[#0a171f] hover:text-[#1d9bf0] py-2 px-2 rounded-full">bookmark</span><span
+                                class="hover:bg-[#0a171f] hover:text-[#1d9bf0] py-2 px-2 rounded-full"><svg
+                                    viewBox="0 0 24 24" aria-hidden="true"
+                                    class="invert w-5 hover:fill-[#1d9bf0] hover:invert-0">
+                                    <g>
+                                        <path
+                                            d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                        </path>
+                                    </g>
+                                </svg></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="last w-1/3 self-start sticky top-0 hidden lg:block p-5">
+            <div class="search">
+                <input type="text" class="bg-[#202327] text-white py-3 px-5 w-72 rounded-full" name=""
+                    placeholder="Search..." id="">
+            </div>
+            <div class="premium border border-[#2f3336] p-3 my-4 rounded-2xl flex flex-col items-start gap-4">
+                <h2 class="font-extrabold text-xl">Subscribe to Premium</h2>
+                <p class="text-sm font-medium">Subscribe to unlock new features and if eligible, receive a share of ads
+                    revenue.</p>
+                <button class="font-bold bg-[#1d9bf0] hover:bg-[#1a8cd8] py-2  px-4 rounded-full">Subscribe</button>
+            </div>
+            <div class=" whatsgoingon border border-[#2f3336] p-3 my-4 rounded-2xl flex flex-col items-start gap-4">
+                <h2 class="font-extrabold text-xl">What’s happening</h2>
+                <div class="poster flex justify-around gap-2">
+                    <img class="w-16 h-16 rounded-xl object-cover object-center" src="images/poster.jpg"
+                        alt="poster image">
+                    <div class="pdetails">
+                        <p class="font-bold">Virginia Tech at Miami (FL)</p>
+                        <p class="text-xs font-bold text-[#71767b]">NCAA Football · 3 hours ago</p>
+                    </div>
+                </div>
+                <div class="trending w-full">
+                    <div class="trendingItem cursor-pointer flex justify-between w-full my-2">
+                        <div class="details">
+                            <p class="text-[#71767b] text-xs font-bold">Trending in United States</p>
+                            <p class="font-extrabold text-sm">Hassan Nasrallah</p>
+                            <p class="text-[#71767b] text-xs font-bold">268k posts</p>
+                        </div>
+                        <div class="dots text-[#71767b] font-bold">...</div>
+                    </div>
+                    <div class="trendingItem cursor-pointer flex justify-between w-full my-2">
+                        <div class="details">
+                            <p class="text-[#71767b] text-xs font-bold">Sports · Trending</p>
+                            <p class="font-extrabold text-sm">#AFLGF</p>
+                            <p class="text-[#71767b] text-xs font-bold">21.8k posts</p>
+                        </div>
+                        <div class="dots text-[#71767b] font-bold">...</div>
+                    </div>
+                    <div class="trendingItem cursor-pointer flex justify-between w-full my-2">
+                        <div class="details">
+                            <p class="text-[#71767b] text-xs font-bold">Politics · Trending</p>
+                            <p class="font-extrabold text-sm">Man of the Year</p>
+                            <p class="text-[#71767b] text-xs font-bold">31.1k posts</p>
+                        </div>
+                        <div class="dots text-[#71767b] font-bold">...</div>
+                    </div>
+                    <div class="trendingItem cursor-pointer flex justify-between w-full my-2">
+                        <div class="details">
+                            <p class="text-[#71767b] text-xs font-bold">Trending on Earth</p>
+                            <p class="font-extrabold text-sm">Mark Maverick</p>
+                            <p class="text-[#71767b] text-xs font-bold">999B posts</p>
+                        </div>
+                        <div class="dots text-[#71767b] font-bold">...</div>
+                    </div>
+                </div>
+                <div class="see text-sm cursor-pointer text-[#1c92e2] hover:underline">See More</div>
+            </div>
+            <div class=" WhotoFollow border border-[#2f3336] p-3 my-4 rounded-2xl flex flex-col items-start gap-4">
+                <h2 class="font-extrabold text-xl">Who to Follow</h2>
+                <div class="follow w-full">
+                    <div class="fcol flex justify-between gap-1 my-3">
+                        <div class="det flex justify-center gap-1">
+                            <div class="dp w-8 h-8 bg-[url('../images/logo.png')] bg-cover bg-center "></div>
+                            <div class="fDetails">
+                                <h2 class="text-sm font-extrabold">Mark Maverick</h2>
+                                <p class="text-xs text-[#71767b]">@MarkMaverick</p>
+                            </div>
+                        </div>
+                        <div class="fButton">
+                            <button
+                                class="bg-white text-black hover:bg-[#d7dbdc] py-1 px-3 font-bold rounded-full">Follow</button>
+                        </div>
+                    </div>
+                    <div class="fcol flex justify-between gap-1 my-3">
+                        <div class="det flex justify-center gap-1">
+                            <div class="dp w-8 h-8 bg-[url('../images/parkerdp.jpg')] rounded-full bg-cover bg-center ">
+                            </div>
+                            <div class="fDetails">
+                                <h2 class="text-sm font-extrabold">Peter Parker</h2>
+                                <p class="text-xs text-[#71767b]">@SpiderMan</p>
+                            </div>
+                        </div>
+                        <div class="fButton">
+                            <button
+                                class="bg-white text-black hover:bg-[#d7dbdc] py-1 px-3 font-bold rounded-full">Follow</button>
+                        </div>
+                    </div>
+                    <div class="fcol flex justify-between gap-1 my-3">
+                        <div class="det flex justify-center gap-1">
+                            <div class="dp w-8 h-8 bg-[url('../images/downey.jpg')] rounded-full bg-cover bg-center ">
+                            </div>
+                            <div class="fDetails">
+                                <h2 class="text-sm font-extrabold">Tony Stark</h2>
+                                <p class="text-xs text-[#71767b]">@IronMan</p>
+                            </div>
+                        </div>
+                        <div class="fButton">
+                            <button
+                                class="bg-white text-black hover:bg-[#d7dbdc] py-1 px-3 font-bold rounded-full">Follow</button>
+                        </div>
+                    </div>
+                    <div class="see text-sm cursor-pointer text-[#1c92e2] hover:underline w-fit">See More</div>
+                </div>
+            </div>
+            <div class="other">
+                <span class="text-[#71767b] text-xs mr-1 p-1">Terms of Service</span>
+                <span class="text-[#71767b] text-xs mr-1 p-1">Privacy Policy</span>
+                <span class="text-[#71767b] text-xs mr-1 p-1">Cookie Policy</span>
+                <span class="text-[#71767b] text-xs mr-1 p-1">Accessibility</span>
+                <span class="text-[#71767b] text-xs mr-1 p-1">Ads info</span>
+                <span class="text-[#71767b] text-xs mr-1 p-1">More ...</span>
+                <span class="text-[#71767b] text-xs mr-1 p-1">© 2024 X Corp.</span>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
